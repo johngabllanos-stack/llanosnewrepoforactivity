@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Science | Blue LED Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="top-banner">
+    <h1>The Science: Three Walls Blocking Blue</h1>
+    <p>Bandgap, crystal quality and the p-type problem</p>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="science.html">The Science</a>
+  </nav>
+
+  <hr>
+
+  <main>
+
+    <h2>Wall 1: A Material With a Wide Bandgap</h2>
+    <p>
+      An LED's colour depends on the <b>bandgap</b> of its semiconductor. Blue light
+      (about 450 nm) needs a bandgap of roughly <span class="blue-text">2.7 eV</span>.
+      Silicon and gallium arsenide are far too narrow. Candidates were
+      <mark>GaN</mark> (3.4 eV), SiC and ZnSe.
+    </p>
+
+    <table>
+      <caption>Semiconductor comparison</caption>
+      <tr>
+        <th>Material</th>
+        <th>Bandgap</th>
+        <th>Colour</th>
+        <th>Problem</th>
+      </tr>
+      <tr>
+        <td>GaAsP</td>
+        <td>about 1.9 eV</td>
+        <td>Red</td>
+        <td>None, easy to make</td>
+      </tr>
+      <tr>
+        <td>SiC</td>
+        <td>about 2.9 eV</td>
+        <td>Dim blue</td>
+        <td>Indirect bandgap, very weak light</td>
+      </tr>
+      <tr>
+        <td>ZnSe</td>
+        <td>about 2.7 eV</td>
+        <td>Blue-green</td>
+        <td>Short lifetime, defects spread</td>
+      </tr>
+      <tr>
+        <td>GaN</td>
+        <td>about 3.4 eV</td>
+        <td>UV (blue with In added)</td>
+        <td>Hard crystals, hard p-type</td>
+      </tr>
+    </table>
+
+    <h2>Wall 2: Growing Good Crystals</h2>
+    <p>
+      GaN has no cheap matching substrate. Sapphire was used, but its atoms do not line
+      up with GaN, so the crystal came out rough and full of defects.
+    </p>
+    <div class="bg-gradient b-ridge">
+      <p>
+        <strong>Breakthrough:</strong> Amano and Akasaki (1986) added a thin
+        <em>aluminium nitride (AlN)</em> buffer layer. Nakamura (1991) used a low-temperature
+        GaN buffer layer. Both gave smooth, high-quality crystals.
+      </p>
+    </div>
+
+    <h2>Wall 3: The p-type Problem</h2>
+    <p>
+      An LED needs both n-type and p-type layers. n-type GaN was easy, but p-type GaN
+      seemed impossible. When magnesium (the p-type dopant) was added, hydrogen atoms
+      bonded to it and <del>switched it off</del> <ins>made it inactive</ins>.
+    </p>
+
+    <ol>
+      <li>1989: Akasaki and Amano used an electron beam to activate magnesium (first p-type GaN).</li>
+      <li>1992: Nakamura showed that simple heating (thermal annealing) drives out the hydrogen.</li>
+      <li>1993: Nakamura built the first bright blue LED using an InGaN junction.</li>
+    </ol>
+
+    <h2>Timeline Summary</h2>
+    <dl>
+      <dt>1962</dt>
+      <dd>First visible (red) LED.</dd>
+      <dt>1986 - 1989</dt>
+      <dd>Smooth GaN crystals and the first p-type GaN.</dd>
+      <dt>1993</dt>
+      <dd>First bright blue LED.</dd>
+      <dt>2014</dt>
+      <dd>Nobel Prize in Physics.</dd>
+    </dl>
+
+    <h2>Conclusion</h2>
+    <div class="bg-radial b-double">
+      <p>
+        The blue LED was not <i>physically</i> impossible. It was a stack of problems
+        (material, crystals and p-type doping) that each looked unsolvable until
+        a few stubborn researchers solved them one by one.
+      </p>
+    </div>
+
+    <p><a href="index.html">&laquo; Back to Home</a></p>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 Blue LED Study Group | <a href="index.html">Home</a> | <a href="about.html">About</a></p>
+  </footer>
+
+</body>
+</html>
